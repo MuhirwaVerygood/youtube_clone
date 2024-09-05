@@ -13,7 +13,7 @@ export default function App(props: AppProps) {
       </Head>
 
       <MantineProvider
-      theme={{colorScheme:"dark"}}
+      defaultColorScheme='dark'
       >
         <Component {...pageProps} />
       </MantineProvider>
