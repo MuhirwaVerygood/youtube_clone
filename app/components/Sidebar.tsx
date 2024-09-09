@@ -51,7 +51,7 @@ const Sidebar = () => {
     },
     {
       name: "Playlists",
-      url:"/channel",
+      url:"/playlists",
     icon: LuListVideo
     },
     {
@@ -82,7 +82,7 @@ const Sidebar = () => {
     },
   ]
   return (
-    <div className="w-[250px] h-full pl-[1%]">
+    <div className="w-[200px]   h-full pl-[1%]">
       <div className="h-[calc(100vh-50px)] overflow-auto sidebar pt-[10%]">
         <div className="list-none leading-loose  w-[80%]">
           {sideListArray.map((l) => (
@@ -98,7 +98,7 @@ const Sidebar = () => {
         </div>
         <hr  className="mt-[4%]"/>
 
-<div className="pl-[5%] mt-[10%] w-[80%] bg-gray-200 rounded-md py-2 ">
+<div className="pl-[5%] mt-[10%] w-[80%] bg-gray-400 rounded-md py-2 ">
   <Link  _hover={{textDecoration: "none"}} className=" w-full flex flex-row items-center">
   <span>You </span>
   <IoIosArrowForward className="ml-[4%]" />
@@ -117,10 +117,12 @@ const Sidebar = () => {
             </div>
           ))}
         </div>
-        <hr />
+        <hr className="mt-[4%]"/>
       </div>
     </div>
   );
 };
 
 export default Sidebar;
+
+

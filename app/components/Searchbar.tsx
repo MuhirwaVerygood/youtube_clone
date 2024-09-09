@@ -35,7 +35,7 @@ const Searchbar = () => {
       </InputRightElement>
     </InputGroup>
 
-<div className="ml-[5%] bg-gray-200 p-2 rounded-[50%]">
+<div className="ml-[5%] bg-gray-100 p-2 rounded-[50%]">
 <FaMicrophone  className="text-[20px]"/>
 </div>  
   </Stack>
