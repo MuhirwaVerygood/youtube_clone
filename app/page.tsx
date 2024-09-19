@@ -9,14 +9,15 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(()=>{
-    fetchAllData()
+    fetchAllData("all")
   },[])
+
 
   return (
     <MainLayout>
       <Sidebar />
        <Stack className="w-[88%]">
-       <Header />
+       <Header  />
        <Main />
        </Stack>
     </MainLayout>

@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit'
 import videoSlice from './features/videos/VideoSlice';
+import searchedVideoSlice from './features/videos/searchedVideoSlice';
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      videoSlice
+      videoSlice,
+      searchedVideos: searchedVideoSlice,
     },
   })
 }

@@ -13,7 +13,11 @@ const Header = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isEndReached, setIsEndReached] = useState(false);
+  const [searchResults, setSearchResults] = useState<any[]>([]);
 
+  const handleSearchResults = (results: any[]) => {
+    setSearchResults(results);
+  };
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const tabsBox = e.currentTarget.querySelector<HTMLElement>(".tabs-box");
     if (isDragging && tabsBox) {
@@ -53,7 +57,7 @@ const Header = () => {
     <VStack direction={"column"} >
       <HStack className="w-full h-[50px] pl-[1%] z-10">
         <Box className="w-[60%]">
-          <Searchbar />
+          <Searchbar onSearchResults={handleSearchResults}/>
         </Box>
         <HeaderLeftCorner />
       </HStack>
