@@ -13,8 +13,8 @@ const Searchbar = () => {
       setSearchClicked(false);
     };
   return (
-    <Stack className="w-[30%] " direction={"row"} align={"center"}  >
-    <InputGroup>
+    <Stack direction={"row"}   justifyContent={"flex-end"}   >
+    <InputGroup  w={"70%"}>
       <InputLeftElement
         pointerEvents="none"
         className={`${searchClicked ? "block":"hidden"}`}
@@ -35,7 +35,7 @@ const Searchbar = () => {
       </InputRightElement>
     </InputGroup>
 
-<div className="ml-[5%] bg-gray-100 p-2 rounded-[50%]">
+<div className="ml-[2%] bg-gray-100 p-2 rounded-[50%]">
 <FaMicrophone  className="text-[20px]"/>
 </div>  
   </Stack>
